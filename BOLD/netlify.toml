@@ -11,20 +11,20 @@ HUGO_ENABLEGITINFO = "true"
 command = "hugo --gc --minify --enableGitInfo"
 
 [context.split1.environment]
-HUGO_VERSION = "0.60.1"
+HUGO_VERSION = "0.60.1-96066756"
 HUGO_ENV = "production"
 
 [context.deploy-preview]
-command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --minify --buildFuture -b $boldscienceconference"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.60.1"
+HUGO_VERSION = "0.60.1-96066756"
 
 [context.branch-deploy]
-command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --minify -b $boldscienceconference"
 
 [context.branch-deploy.environment]
-HUGO_VERSION = "0.60.1"
+HUGO_VERSION = "0.60.1-96066756"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
