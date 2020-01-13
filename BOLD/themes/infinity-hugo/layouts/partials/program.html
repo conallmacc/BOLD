@@ -1,0 +1,35 @@
+{{ if .Site.Params.program.enable }}
+    {{"<!-- About Section -->" | safeHTML}}
+    <section id="about" class="section about bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-16 wow fadeInLeft">
+                    <div class="content">
+                        {{ with .Site.Params.program.heading }}
+                            <h3>{{ . }}</h3>
+                        {{ end }}
+                        </div>
+                            <p>We are honoured to host Dr. Shurjeel Choudhri's keynote address. Dr. Choudhri is the Senior Vice President and Head of Medical and Scientific Affairs at Bayer Inc.</p>
+                            <br>
+                            <br>
+                            <h4>Timetable</h4>
+                            <p> 9:30am : Coffee/ Meet and Greet
+                              <br>10:00am: Opening Remarks
+                              <br>10:05am-10:30am: Dr. Dave Mumby</p>
+                                <ol>How to find accurate sources of information</ol>
+                                <p>10:30am-1:30pm: Workshops Begin
+                              <br>1:30pm-2:30pm: Lunch Break and Poster Session
+                              <br>2:30pm: Data Talks
+                              <br>3:15pm: Prize Announcements and Keynote Address by Dr.Choudhri</p>
+                </div>
+                <div class="col-md-5 col-sm-12 wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="about-slider">
+                        {{ with .Site.Params.program.image }}
+                            <img src= "{{. }}" style="width:300px;height:300px;">
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}

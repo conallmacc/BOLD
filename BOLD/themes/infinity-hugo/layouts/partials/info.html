@@ -1,0 +1,31 @@
+{{ if .Site.Params.info.enable }}
+    {{"<!-- Service Section -->" | safeHTML}}
+    <section id="Info" class="conference description">
+        <div class="container">
+            <div class="row">
+                <div class="heading wow fadeInUp">
+                    {{ with .Site.Params.info.title }}
+                        <h2>{{ . }}</h2>
+                    {{ end }}
+                    {{ with .Site.Params.info.subtitle }}
+                        <p>{{ . }}</p>
+                    {{ end }}
+                        <p>There will be five different workhops groups each with a different theme related to drugs and drug development. The colour of the star on your nametag indicates which group you are in.
+                        <br>During the workshops, students will select a peer-reviewed paper and extract the most meaningful findings from it.
+                      Working in groups, students will learn skills on how to communicate the findings and how to present them in front of a group.
+                    <br> DON'T PANIC! Presenting is optional students can just be observers.</p>
+                </div>
+                {{ range .Site.Params.info.infoItem }}
+                    <div class="col-sm-3 col-md-3 wow fadeInLeft" data-wow-delay="{{ .delay }}">
+                        <div class="block">
+                            <img src="{{ .image }}" style="width:150px;height:150px;">
+                            <h3>{{ .title }}</h3>
+                            <p>{{ .description }}</p>
+                            <p>{{.venue}}</p>
+                        </div>
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+{{ end }}

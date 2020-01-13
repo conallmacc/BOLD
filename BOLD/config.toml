@@ -1,0 +1,107 @@
+baseURL = "http://boldscienceconference.ca/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "infinity-hugo"
+
+
+
+[params]
+
+# Navigation
+[params.navigation]
+home = "Home"
+about = "About"
+program = "Program"
+info = "Info"
+register = "Register"
+
+[params.hero]
+enable      = true
+title       =  "BOLD Science 2020"
+subtitle    = "Take part in BOLD 2020"
+btnText     = "Get Registered"
+countdownYear = "2020"
+countdownMonth = "05"
+countdownDay  = "01"
+
+
+
+[params.about]
+enable = true
+heading = "About the Science College..."
+
+[[params.about.sliderItem]]
+image   = "scol1.jpg"
+[[params.about.sliderItem]]
+image   = "scol2.jpg"
+[[params.about.sliderItem]]
+image   = "scol3.jpg"
+
+
+
+[params.program]
+enable= true
+heading = "Conference Program"
+image = "Shurjeel_Choudhri.jpg"
+
+[params.info]
+enable=true
+title= "Workshops at BOLD2020"
+subtitle="This year's theme is all about drugs. We will have different discussion groups to give you a multidisciplinary look at drugs."
+
+
+
+[[params.info.infoItem]]
+# give icon(themefisher icon font), title, description
+# more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+# use delay for reveal items one by one
+image    = "physics.jpg"
+title   = "Physics"
+description = "Drug Delivery Systems"
+venue = "Location:TBA"
+delay   = "0s"
+
+[[params.info.infoItem]]
+# give icon(themefisher icon font), title, description
+# more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+# use delay for reveal items one by one
+image    = "chem.jpg"
+title   = "Chemistry & Biochem"
+description = "How Lance Armstrong got caught: quantifying drugs in body fluids"
+venue = "Location:TBA"
+delay   = "0.2s"
+
+[[params.info.infoItem]]
+# give icon(themefisher icon font), title, description
+# more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+# use delay for reveal items one by one
+image    = "biology.jpg"
+title   = "Biology"
+description = "Drug Transport into cells"
+venue ="Location:TBA"
+delay   = "0.4s"
+
+[[params.info.infoItem]]
+# give icon(themefisher icon font), title, description
+# more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+# use delay for reveal items one by one
+image    = "neuro.jpg"
+title   = "Psychology"
+description = "Hooked: The neurobiology of drug addiction"
+venue = "Location: TBA"
+delay   = "0.6s"
+
+[[params.info.infoItem]]
+# give icon(themefisher icon font), title, description
+# more about themefisher icon font visit https://github.com/themefisher/themefisher-font
+# use delay for reveal items one by one
+image    = "exercise.jpg"
+title   = "Exercise Science"
+description = "Why you shouldn't operate heavy machinery while high: drug effects on motor function"
+venue = "Location:TBA"
+delay   = "0.6s"
+
+[params.register]
+enable = true
+title = "Register to present at BOLD 2020"
+subtitle = "Please fill out the form below in order to register to present at BOLD2020"

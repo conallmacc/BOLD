@@ -1,0 +1,58 @@
+{{ if .Site.Params.register.enable }}
+    {{"<!-- Register Section -->" | safeHTML}}
+    <section id="register" class="section register">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="block">
+                        <div class="heading wow fadeInUp">
+                            {{ with .Site.Params.register.title }}
+                            <h2>{{ . }}</h2>
+                            {{ end }}
+                            {{ with .Site.Params.register.subtitle }}
+                                <p>{{ . }}</p>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 offset-md-3">
+                    <div class="form-group">
+                        <form action="#" method="POST">
+                            <div class="input-field">
+                                <input type="text" class="form-control" placeholder="Your Name" name="name">
+                            </div>
+                            <div class="input-field">
+                                <input type="email" class="form-control" placeholder="Email Address" name="email">
+                            </div>
+                            <div class="input-field">
+                                <input type = "text" textarea class="form-control" placeholder="Your supervisor" name="Supervisor">
+                                </div>
+                                <div class="input-field">
+                                    <input type = "text" textarea class="form-control" placeholder="Your poster title" name="Title of Poster">
+                                    </div>
+                                <div class = "input-field">
+                             <p>Has your supervisor approved your submission?</p>
+                             <div>
+  <input type="radio" id="Yes" name="Yes" value="Yes" font color = "black">
+  <label for="Yes" style="color: black">Yes</label>
+</div>
+<div>
+  <input type="radio" id="No" name="No" value="No" font color = "black">
+  <label for="No" style="color: black">No</label>
+</div>
+                            </div>
+                            <button class="btn btn-send" type="submit">Send me</button>
+                        </form>
+
+                        <div id="success">
+                            <p>Thanks for registering</p>
+                        </div>
+                        <div id="error">
+                            <p>Please submit your registration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}

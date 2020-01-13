@@ -1,0 +1,33 @@
+{{ if .Site.Params.about.enable }}
+    {{"<!-- About Section -->" | safeHTML}}
+    <section id="about" class="section about bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-16 wow fadeInLeft">
+                    <div class="content">
+                        {{ with .Site.Params.about.heading }}
+                            <h3>{{ . }}</h3>
+                        {{ end }}
+                        </div>
+                            <p>The Science College offers highly motivated students in any of the sciences a Multidisciplinary minor that prepares them for a life of scientific thought and research.
+                            <br> <p>In this program - while majoring in their own discipline - students also participate in scientific research projects in each of their three undergraduate years.</p>
+                            <br>
+                            <p>Benefits of Science College:</p>
+                            <ol>-Conduct research starting in first year
+                                <br>-Mentorship by scientists at Concordia
+                                <br>-Free accesss to an English writing professor for help with written assignments
+                                <br>-Personal study space</ol>
+                            <p>The College accepts only a small number of new students each year, find out if it is right for you....</p>
+                            <a href="https://concordia.ca/scicollege">https://concordia.ca/scicollege</a>
+                </div>
+                <div class="col-md-5 col-sm-12 wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="about-slider">
+                        {{ range .Site.Params.about.sliderItem }}
+                            <img src="{{ .image }}" alt="slider-image" style="width:400px;height:250px;">
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}
